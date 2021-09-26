@@ -1,7 +1,9 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/test?useSSL=false&allowPublicKeyRetrieval=true
-    username: testdb
-    password: pass
+    url: jdbc:h2:tcp://localhost/~/todoNyan
+    username: admin
+    password: 123
+    driver-class-name: org.h2.Driver
+
 logging:
   config: classpath:logback-local.xml

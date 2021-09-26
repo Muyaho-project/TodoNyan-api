@@ -4,9 +4,10 @@ spring:
       on-profile: local
   jpa:
     hibernate:
-      ddl-auto: create # 테이블 생성 옵션
+      ddl-auto: none # 테이블 생성 옵션
     properties:
       hibernate:
+        show_sql: true
         format_sql: true # hibernate 쿼리 포맷 pretty
         default_batch_fetch_size: 100
     open-in-view: false
